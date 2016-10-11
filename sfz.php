@@ -21,7 +21,7 @@ if($spnr){
    print($speise);
 }else{
    if(!$tg){
-      print('Usage: sfz.php?nr=[Speisennummer von 1 bis 4]');
+      //print('Usage: sfz.php?nr=[Speisennummer von 1 bis 4]');
    }
 }
 
