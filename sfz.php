@@ -9,6 +9,7 @@ function getspeise($nr){
    preg_match (($regexstr),$page,$treffer);
    $speise=str_replace("<br />", " ", $treffer['0']);
    $speise=str_replace("- ","-",$speise);
+   $speise=str_replace("- ","-",$speise);
    $speise = substr($speise, 0, strpos($speise, "/"));
    return $speise;
 
