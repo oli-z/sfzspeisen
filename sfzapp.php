@@ -25,6 +25,8 @@
             echo'<li class="list-group-item">'.$sp3.'</li>';
           if ($sp4)
             echo'<li class="list-group-item">'.$sp4.'</li>';
+          if(!$sp1 and !$sp2 and !$sp3 and !$sp4)
+            echo'<li class="list-group-item">Keine Daten verfügbar. Ferien oder Wochenende?</li>';
         ?>
   </ul>
 </div>
