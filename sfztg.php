@@ -2,7 +2,7 @@
 <?php
 
 
-$tgkey = '276855496:AAFzEXMntuA3fRJ8maPaVDQUcYaWvFMZBns'; //Telegram API Key
+$tgkey = ''; //Telegram API Key
 $group = '@sfzspeisen'; //Telegram Group
 
 require('sfz.php');
