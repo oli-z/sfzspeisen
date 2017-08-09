@@ -1,15 +1,18 @@
 <?php
   include('sfz.php');
-  $sp1=getspeise(1);
-  $sp2=getspeise(2);
-  $sp3=getspeise(3);
-  $sp4=getspeise(4);
+  $sp1=getspeise('Menue_1');
+  $sp2=getspeise('Menue_2');
+  $sp3=getspeise('Menue_3');
+  $spsalat=getspeise('Salat');
+  $splbh=getspeise('Lunchbox_herzhaft');
+  $splbs=getspeise('Lunchbox_suess');
+  $spvs=getspeise('Verpflegungsbeutel_S');
  ?>
 
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/bootstrapcustom.min.css">
+<!--<link rel="stylesheet" href="./css/bootstrapcustom-theme.min.css">-->
 </head>
 <body align="center" style="background-color: #fafafa;">
 
@@ -23,12 +26,17 @@
             echo'<li class="list-group-item">'.$sp2.'</li>';
           if ($sp3)
             echo'<li class="list-group-item">'.$sp3.'</li>';
-          if ($sp4)
-            echo'<li class="list-group-item">'.$sp4.'</li>';
-          if(!$sp1 and !$sp2 and !$sp3 and !$sp4)
+          if ($spsalat)
+            echo'<li class="list-group-item">'.$spsalat.'</li>';
+          if ($splbh)
+            echo'<li class="list-group-item">'.$splbh.'</li>';
+          if ($splbs)
+            echo'<li class="list-group-item">'.$splbs.'</li>';
+          if ($spvs and $spvs != " ")
+            echo'<li class="list-group-item">'.$spvs.'</li>';
+          if(!$sp1 and !$sp2 and !$sp3)
             echo'<li class="list-group-item">Keine Daten verfügbar. Ferien oder Wochenende?</li>';
         ?>
   </ul>
 </div>
-
 </body>
